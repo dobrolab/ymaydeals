@@ -1,0 +1,100 @@
+
+/* BLOCK header */
+#header
+	padding-top: 30px
+	padding-bottom: 30px
+
+	.logo-default
+		max-width: 100%
+
+
+	.header_contact a
+		text-decoration: none
+		text-transform: uppercase
+		color: $c1
+	.navbar-toggler
+		text-transform: uppercase
+		color: $c1
+		svg
+			margin-right: 10px
+		&:hover svg rect:last-child
+			width: 28px
+
+.fade2 
+	.modal-content 
+		transform: translateX(20%) 
+		opacity: 0 
+		transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9) 
+	&.show 
+		.modal-content 
+			transform: translateX(0) 
+			opacity: 1 
+
+.modal-content
+	background: $c2 url('/img/category_bg.png') no-repeat scroll center center / cover
+	.modal-header
+		border-bottom: 0px
+	.modal-body
+		.menu_wrapper
+			height: 100%
+			display: flex
+			flex-direction: column
+			justify-content: center
+			padding-left: 10%
+
+		.h4
+			font-size: 70px
+			letter-spacing: 5px
+			padding-bottom: 40px
+		.menu-links
+			list-style: none
+			padding-left: 0
+			li
+				padding-bottom: 15px
+			a
+				text-decoration: none
+				font-size: 36px
+				color: $c0
+
+
+
+/* ADAPTIVES header  */
+
+/* // XXL */
+@media (max-width: 1679px)
+	#header
+		//
+
+/* // XL */
+@media (max-width: 1439px) 
+	#header
+		//
+
+/* // LG */
+@media (max-width: 1199px)
+	#header
+		//
+
+/* // MD */
+@media (max-width: 991px) 
+	#header
+		//
+
+/* // SM */
+@media (max-width: 767px)
+	#header
+		//
+
+/* // XS */
+@media (max-width: 575px) 
+	#header
+	.modal-content
+		.modal-body
+			.h4
+				font-size: 40px
+			.menu-links a
+				font-size: 24px
+
+
+/* BLOCK header: end */
+

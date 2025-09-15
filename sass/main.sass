@@ -1,0 +1,142 @@
+@font-face
+	font-family: 'Citrica'
+	src: url('/fonts/CitricaCyrillic.woff2') format('woff2')
+	font-weight: normal
+	font-style: normal
+	font-display: swap
+
+$c0: #757548
+$c1: #403F2B
+$c2: #E8E59B
+$c3: #DDDDCC
+$c8: #C4C196
+$c9: #FEFAEF
+$f0: 'Poppins', sans-serif
+$f1: 'Citrica', sans-serif
+
+*
+	transition: all .3s ease
+
+html
+	scroll-behavior: smooth !important
+
+body
+	background: $c9
+	min-width: 360px
+	font-family: $f0
+	font-weight: 100
+	font-size: 20px
+	letter-spacing: 1px
+	color: $c0
+
+	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+		font-family: $f1
+		font-weight: 100
+		color: #20324E
+		line-height: 120%
+		text-transform: uppercase
+
+	h1
+		color: $c1
+		letter-spacing: 2px
+
+	h2
+		font-size: 40px
+		letter-spacing: 2px
+	
+	p
+		margin-bottom: 0.5rem
+
+	section
+		padding-top: 100px
+		padding-bottom: 100px
+
+	.btn
+		text-transform: uppercase
+		border-radius: 25px
+		padding: 10px 40px
+
+		&.btn-light
+			background-color: $c2
+			border-color: $c2
+		&.btn-outline
+			border-color: $c1
+	
+	a:hover
+		opacity: .8
+		filter: hue-rotate(5deg)
+
+
+@media (min-width: 1680px)
+	.container
+		max-width: 1580px
+
+/* // XS */
+@media (max-width: 575px) 
+	body
+		font-size: 16px
+		section
+			padding-top: 6	0px
+			padding-bottom: 6	0px
+		h2
+			font-size: 30px
+
+.material_input 
+	position: relative 
+	overflow: hidden 
+	margin-bottom: 30px
+	padding-top: 10px
+	input 
+		width: 100% 
+		height: 100% 
+		background-color: transparent 
+		padding-top: 20px 
+		border: none 
+		color: $c1
+		outline: none !important
+		&::selection 
+			color: #fff
+			background-color: $c0
+	label 
+		position: absolute 
+		left: 0 
+		bottom: 0 
+		width: 100% 
+		height: 100% 
+		border-bottom: solid 1px $c1
+		pointer-events: none 
+		& > span 
+			position: absolute 
+			bottom: 5px 
+			left: 0 
+			transition: all 0.4s ease 
+		&:after 
+			position: absolute 
+			bottom: -1px 
+			left: 0 
+			content: "" 
+			width: 100% 
+			height: 100% 
+			border-bottom: solid 2px $c1 
+			transform: translateX(-101%) 
+			transition: all 0.4s ease 
+	input:focus + label span,
+	input:valid + label span 
+		transform: translateY(-150%) 
+		font-size: 14px 
+		color: $c1
+	input:focus + label:after,
+	input:valid + label:after 
+		transform: translateX(0) 
+
+
+
+@import _topbar.sass
+@import _header.sass
+@import _promo.sass
+@import _category.sass
+@import _about.sass
+@import _cta.sass
+@import _reviews.sass
+@import _contacts.sass
+@import _footer.sass

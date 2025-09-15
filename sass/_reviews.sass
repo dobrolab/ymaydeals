@@ -1,0 +1,86 @@
+/* reviews */
+
+#reviews
+	background: $c8 url('/img/reviews_bg.jpg') no-repeat scroll center center / cover
+	padding-top: 70px
+	padding-bottom: 55px
+	h2
+		text-align: center
+		font-weight: 100
+		margin-bottom: 80px
+	.reviewSwiper
+		&::before, &::after
+			content: ''
+			position: absolute
+			display: block
+			width: 100px
+			height: 40px
+			border-style: solid
+		&::before
+			bottom: 0
+			right: 0
+			border-width: 0 1px 1px 0
+			border-color: transparent #fff #fff transparent
+			border-radius: 0 0 20px 0
+		&::after
+			top: 0
+			left: 0
+			border-width: 1px 0 0 1px
+			border-color: #fff transparent transparent #fff
+			border-radius: 20px 0 0 0
+	.rewiew_item
+		padding: 40px 60px
+		position: relative
+
+	.rewiew_item_name
+		font-family: $f1
+		margin-top: 30px
+		text-align: center
+		font-size: 26px
+	.swiper-pagination_rewiew
+		position: relative
+		.swiper-pagination-bullet
+			width: 12px
+			height: 12px
+			margin: 0 10px
+		.swiper-pagination-bullet-active
+			background-color: #fff
+
+
+/* reviews ADAPTIVE */
+
+/* // XXL */
+@media (max-width: 1679px)
+	#reviews
+		//
+
+/* // XL */
+@media (max-width: 1439px) 
+	#reviews
+		//
+
+/* // LG */
+@media (max-width: 1199px)
+	#reviews
+		//
+
+/* // MD */
+@media (max-width: 991px) 
+	#reviews
+		//
+
+/* // SM */
+@media (max-width: 767px)
+	#reviews
+		//
+
+/* // XS */
+@media (max-width: 575px) 
+	#reviews
+		h2
+			margin-bottom: 40px
+
+
+
+/* reviews: end */
+

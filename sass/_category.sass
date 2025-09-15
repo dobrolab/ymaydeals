@@ -1,0 +1,92 @@
+
+/* category */
+
+#category
+	background: transparent url('/img/category_bg.png') no-repeat scroll center center / cover
+
+	.category_wrapper
+		margin-top: 40px
+
+		.category_item
+			background-color: $c1
+			min-height: 360px
+			position: relative
+			border-radius: 20px
+			overflow: hidden
+			display: flex
+			justify-content: center
+			align-items: center
+			z-index: 0
+			&:hover img
+				transform: scale(1.1) rotate(-2deg)
+			.category_item_h3
+				font-size: 35px
+				color: $c2
+				text-align: center
+				font-weight: 100
+				line-height: 110%
+			img
+				position: absolute
+				height: 100%
+				display: block
+				left: 0
+				top: 0
+				object-fit: cover
+				z-index: -1
+			.category_item_link
+				display: flex
+				flex-direction: column
+				justify-content: flex-end
+				font-size: 12px
+				letter-spacing: 0
+				color: $c3
+				text-decoration: none
+				position: absolute
+				font-weight: 100
+				text-align: center
+				width: 100%
+				height: 100%
+				bottom: 0px
+				padding-bottom: 20px
+				left: 0
+
+/* category ADAPTIVE */
+
+/* // XXL */
+@media (max-width: 1679px)
+	#category
+		//
+
+/* // XL */
+@media (max-width: 1439px) 
+	#category
+		//
+
+/* // LG */
+@media (max-width: 1199px)
+	#category
+		//
+
+/* // MD */
+@media (max-width: 991px) 
+	#category
+		//
+
+/* // SM */
+@media (max-width: 767px)
+	#category
+		//
+
+/* // XS */
+@media (max-width: 575px) 
+	#category
+		.category_wrapper
+			.category_item
+				min-height: 260px
+				.category_item_h3
+					font-size: 25px
+
+
+
+/* category: end */
+
